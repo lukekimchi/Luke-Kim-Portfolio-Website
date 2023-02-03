@@ -10,7 +10,7 @@ function AboutMe() {
       </div>
       {/* Get to know me */}
       <div className="flex justify-center items-center py-10">
-        <p className="font-light text-justify">
+        <p className="font-light text-justify px-20">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
