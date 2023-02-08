@@ -14,8 +14,9 @@
 
   }
 
+
   p {
-    @apply font-mono text-2xl font-semibold px-1 py-1;
+    @apply font-serif text-2xl font-semibold px-1 py-1;
   }
 
  

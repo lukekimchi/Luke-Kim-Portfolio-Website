@@ -1,4 +1,3 @@
- 
 function Navbar() {
   // let links = [
   //   { name: "About Me", link: "/about-me" },
@@ -6,7 +5,7 @@ function Navbar() {
   //   { name: "CONTACT", link: "/contact" },
   // ];
   return (
-    <nav className="flex flex-row w-full bg-black px-10 py-10 justify-center h-36 items-center">
+    <nav className="flex flex-row w-full bg-transparent px-10 py-10 justify-center h-36 items-center">
       {/* <div className="flex w-32 h-32">
         <img
           src={Logo}
@@ -16,13 +15,13 @@ function Navbar() {
       </div> */}
 
       <div className="flex">
-        <li className="px-4 inline text-white font-mono hover:text-rose-500">
+        <li className="px-4 inline text-black font-mono font-extrabold hover:text-rose-500  cursor-pointer">
           About Me
         </li>
-        <li className="px-4 inline text-white font-mono hover:text-rose-500">
+        <li className="px-4 inline text-black font-mono font-extrabold hover:text-rose-500 cursor-pointer">
           Experience
         </li>
-        <li className="px-4 inline text-white font-mono hover:text-rose-500">
+        <li className="px-4 inline text-black font-mono font-extrabold hover:text-rose-500 cursor-pointer">
           Contact
         </li>
       </div>
