@@ -25,7 +25,7 @@ function Contact() {
   const onSubmitHandler = async (event) => {
     event.preventDefault();
     setSubmitted(true);
-    setFormData({name: "", email:"", message:""});
+    setFormData({ name: "", email: "", message: "" });
 
     await postSubmission();
   };
@@ -41,17 +41,16 @@ function Contact() {
       const result = await axios.post(formSparkUrl, payload);
       console.log(result);
     } catch (error) {
+      setSubmitted(false);
       alert(error);
     }
   };
 
   return (
-    <>
+    <div className="p-5">
       {/* Heading */}
-      <div className="flex justify-center items-center">
-        <h1 className="animate-text bg-gradient-to-r from-amber-800 via-red-600 to-amber-500 bg-clip-text text-transparent">
-          Reach out!
-        </h1>
+      <div className="flex justify-start items-center py-10 px-20">
+        <h1>Reach Out.</h1>
       </div>
 
       {/* Form */}
@@ -106,19 +105,19 @@ function Contact() {
             />
           </div>
           {/* Button */}
-          <div className="flex justify-center">
-            <Button type="submit" gradientMonochrome="purple">
+          <div className="flex justify-end py-5">
+            <Button type="submit" className="">
               Send
             </Button>
           </div>
           {submitted && (
-            <div className="flex justify-center m-5 font-mono text-green-400 font-semibold">
+            <div className="flex justify-end m-5 font-mono text-green-400 font-semibold">
               Thanks for your message :)
             </div>
           )}
         </div>
       </form>
-    </>
+    </div>
   );
 }
 

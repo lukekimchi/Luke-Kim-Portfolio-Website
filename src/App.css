@@ -9,14 +9,14 @@
     background-color: #FFFBEB;
   }
   h1 {
-    @apply text-6xl uppercase font-extrabold px-1 py-7 text-center;
-    font-family: 'Keep on Truckin', sans-serif;
+    @apply text-6xl font-light px-1 py-7 text-start font-serif;
+   
 
   }
 
 
   p {
-    @apply font-serif text-2xl font-semibold px-1 py-1;
+    @apply font-serif text-2xl font-thin px-1 py-1;
   }
 
  

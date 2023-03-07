@@ -4,25 +4,24 @@ import Portfolio from "../assets/portfolio-website.jpeg";
 import QuickDraw from "../assets/quick-draw.jpeg";
 import ExperienceCard from "../UI/ExperienceCard";
 import { FaGithub } from "react-icons/fa";
-import { FaPlayCircle } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
 import { Carousel } from "flowbite-react";
 
 function Experience() {
   return (
-    <div className="h-screen">
-      <div className="flex justify-center items-center">
-        <h1 className="animate-text bg-gradient-to-r from-blue-900	0 via-emerald-500 to-teal-300 bg-clip-text text-transparent">
-          What I've done
-        </h1>
+    <div className="h-screen w-full p-5">
+      <div className="flex justify-start items-center px-20">
+        <h1>What I've done.</h1>
       </div>
 
       <div className="h-5/6 flex justify-center">
-        <Carousel style={{width: "75%"}}
+        <Carousel
+          style={{ width: "75%" }}
           leftControl={
-            <FaPlayCircle className="-scale-x-100 text-3xl text-rose-600 hover:text-rose-900" />
+            <FaArrowLeft className="text-3xl text-black transition ease-in-out delay-100 hover:text-rose-500 hover:scale-110 " />
           }
           rightControl={
-            <FaPlayCircle className="text-3xl text-rose-600 hover:text-rose-900" />
+            <FaArrowLeft className="-scale-x-100 text-3xl text-black transition ease-in-out delay-100 hover:text-rose-500 hover:-scale-x-110 " />
           }
           indicators={false}
         >
@@ -51,7 +50,7 @@ function Experience() {
               name="Portfolio Website"
               link="https://github.com/lukekimchi/Luke-Kim-Portfolio-Website"
               description="This website about me!"
-              image={Portfolio}
+              image=""
               button={<FaGithub className="text-2xl" />}
             />
           </div>
@@ -65,7 +64,6 @@ function Experience() {
               button="Take a look!"
             />
           </div>
-
         </Carousel>
       </div>
 
