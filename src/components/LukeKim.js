@@ -1,4 +1,4 @@
-import SketchVideo from "../assets/sketch.mov";
+import SketchVideo from "../assets/sketch-1.mp4";
 
 function LukeKim() {
   return (
